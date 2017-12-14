@@ -23,7 +23,7 @@ router.get('/:todoId', function(req, res){
 
 // Update Route
 router.put('/:todoId', function(req, res){
-   db.Todo.findOneAndUpdate({_id:req.params.todoId}, req.body, {new:true}) //{n}ew: true} will say to pass the newly updated todo in todoUpdated variable.
+   db.Todo.findOneAndUpdate({_id:req.params.todoId}, req.body, {new:true}) //{new: true} will say to pass the newly updated todo in todoUpdated variable.
    .then(function(todoUpdated){ 
       res.json(todoUpdated);
    })

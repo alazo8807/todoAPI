@@ -6,7 +6,12 @@ function seedDb(){
     
     var todoList = [
         {
-            name: 'This is one element',
+            name: 'Buy a car',
+            completed: false,
+            created_date: Date.now()
+        },
+        {
+            name: 'Buy a house',
             completed: false,
             created_date: Date.now()
         }    
